@@ -31,7 +31,8 @@ print(f"""\nHola {nombre}, lee con atencion las intrucciones de la trivia:
  2.- Responde con la letra de la alternativa correcta y presiona 'Enter' para pasar al siguiente nivel
  3.- Inicias con {puntaje} puntos, hay respuestas que duplicarán, restarán, sumarán o te harán perder 
  la mitad de tu puntaje
- Buena suerte!\n{RESET}""")
+ Buena suerte!\n{RESET}
+ La trivia inicia en..\n""")
 
 # Agregamos un timer para iniciar las preguntas
 for timer in range(5, -1, -1):
