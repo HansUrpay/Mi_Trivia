@@ -1,4 +1,5 @@
 import random  # Importamos la librería random para crear un numero aleatorio 
+import time 
 
 # Codigos para dar colores a las lineas de codigo
 BLACK = '\033[30m'
@@ -32,8 +33,10 @@ print(f"""\nHola {nombre}, lee con atencion las intrucciones de la trivia:
  la mitad de tu puntaje
  Buena suerte!\n{RESET}""")
 
-# Hacemos una pausa para leer y entender las instrucciones
-inicio = input("Presiona 'Enter' para iniciar")
+# Agregamos un timer para iniciar las preguntas
+for timer in range(5, -1, -1):
+  print(RED+str(timer)+RESET)
+  time.sleep(1.5)
 
 # Categoria Deporte
 
