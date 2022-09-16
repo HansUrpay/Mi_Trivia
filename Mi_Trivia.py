@@ -1,5 +1,12 @@
 import random  # Importamos la librería random para crear un numero aleatorio 
-import time 
+import time  # Importamos la librería time para hacer pausas en el codigo
+import os #Importamos la librería os para limpiar pantalla
+
+def clean(): #Definimos la función para limpiar pantalla segun el SO
+  if os.name == "posix":
+   os.system ("clear")
+  elif os.name == "ce" or os.name == "nt" or os.name == "dos":
+   os.system ("cls")
 
 # Codigos para dar colores a las lineas de codigo
 BLACK = '\033[30m'
@@ -36,21 +43,21 @@ game = True
 contador = 0
 
 while game == True:
+  contador += 1
   # Agregamos un timer para iniciar la trivia
   print("\nLa trivia inicia en..\n")
-  for timer in range(3, 0, -1):
-    time.sleep(1)
+  for timer in range(5, 0, -1):
+    time.sleep(1.2)
     print(RED+str(timer)+RESET)
-    time.sleep(2)
-  
-  contador += 1
-  time.sleep(1)
-  print(f"{RED}Go!\n{RESET}")
-  time.sleep(1)
+    time.sleep(1.2)
+  print(f"{RED}\nGo!\n{RESET}")
+  time.sleep(1.5)
+
+  clean() #Limpiamos pantalla
 
   # Categoria Deporte
   # Pregunta 1
-  print(f"\n{CYAN}Nivel 1")
+  print(f"\n{GREEN}Nivel 1")
   print("¿Que país ha ganado mas copas del mundo en fútbol?")
   print ("a) Brasil") # Respuesta correcta
   print ("b) Alemania") 
@@ -80,11 +87,14 @@ while game == True:
     print(f"{RED}Oh! no es la respuesta correcta pero te regalo 10 puntos{RESET}")
 
   print(f"{nombre} llevas {puntaje} puntos")
+  time.sleep(2)
+  clean() #Limpiamos pantalla
+
   # Hacemos una pausa para leer y entender el mensaje de la respuesta  
-  inicio = input("\nPresiona 'Enter' para avanzar al siguiente nivel")
+  # inicio = input("\nPresiona 'Enter' para avanzar al siguiente nivel")
 
   #  Pregunta 2
-  print(f"\n{CYAN}Nivel 2")
+  print(f"\n{GREEN}Nivel 2")
   print("¿Quién es el atleta mas rápido a nivel mundial en 100 metros?")
   print ("a) Michael Jordan")
   print ("b) Tyson Gay")
@@ -114,11 +124,13 @@ while game == True:
     print(f"{RED}No soy ninguna de las alternativas pero te doy 10 puntos extras{RESET}")
 
   print(f"{nombre} llevas {puntaje} puntos")
+  time.sleep(2)
+  clean() #Limpiamos pantalla
   # Hacemos una pausa para leer y entender el mensaje de la respuesta  
-  inicio = input("\nPresiona 'Enter' para avanzar al siguiente nivel")
+  # inicio = input("\nPresiona 'Enter' para avanzar al siguiente nivel")
 
   #  Pregunta 3
-  print(f"\n{CYAN}Nivel 3")
+  print(f"\n{GREEN}Nivel 3")
   print("¿Que es un decatlón?")
   print ("a) Un deporte olímpico")
   print ("b) Una competencia atlética de 10 pruebas combinadas") # Respuesta correcta
@@ -132,7 +144,7 @@ while game == True:
   # Ahora, verificamos su respuesta para mandar un mensaje de acierto o de error
   if respuesta_3 == "a":
     puntaje -= 5
-    print(f"{RED}Respuesta incorrecta {nombre}, no es un deporte{RESET}")
+    print(f"{RED}Respuesta incorrecta {nombre}, el decatlón no es un deporte{RESET}")
   elif respuesta_3 == "b":
     puntaje += 10
     print(f"{GREEN}Respuesta correcta {nombre}, el declatlón es una competencia de 10 pruebas{RESET}")
@@ -148,12 +160,15 @@ while game == True:
     print(f"{RED}Me descubriste! ten 10 puntos por eso{RESET}")
 
   print(f"{nombre} llevas {puntaje} puntos")
+  time.sleep(2)
+  clean() #Limpiamos pantalla
+
   # Hacemos una pausa para leer y entender el mensaje de la respuesta  
-  inicio = input("\nPresiona 'Enter' para avanzar al siguiente nivel")
+  # inicio = input("\nPresiona 'Enter' para avanzar al siguiente nivel")
 
   # Categoria Cine
   # Pregunta 4
-  print(f"\n{CYAN}Nivel 4")
+  print(f"\n{GREEN}Nivel 4")
   print("¿Quien es el protagonista de la película 'Thor'?")
   print ("a) Robert Downey Jr.")
   print ("b) Chris Evans")
@@ -183,11 +198,14 @@ while game == True:
     print(f"{RED}Vaya! acepta estos 10 puntos extras{RESET}")
 
   print(f"{nombre} llevas {puntaje} puntos")
+  time.sleep(2)
+  clean() #Limpiamos pantalla
+
   # Hacemos una pausa para leer y entender el mensaje de la respuesta  
-  inicio = input("\nPresiona 'Enter' para avanzar al siguiente nivel")
+  # inicio = input("\nPresiona 'Enter' para avanzar al siguiente nivel")
 
   # Pregunta 5
-  print(f"\n{CYAN}Nivel 5")
+  print(f"\n{GREEN}Nivel 5")
   print("¿En que año se estrenó Corazon Valiente?")
   print ("a) 1998")
   print ("b) 2000")
@@ -217,11 +235,14 @@ while game == True:
     print(f"{RED}Buen intento! no vienen mal 10 puntos mas{RESET}")
 
   print(f"{nombre} llevas {puntaje} puntos")
+  time.sleep(2)
+  clean() #Limpiamos pantalla
+
   # Hacemos una pausa para leer y entender el mensaje de la respuesta  
-  inicio = input("\nPresiona 'Enter' para avanzar al siguiente nivel")
+  # inicio = input("\nPresiona 'Enter' para avanzar al siguiente nivel")
 
   # Pregunta 6
-  print(f"\n{CYAN}Nivel 6")
+  print(f"\n{GREEN}Nivel 6")
   print("¿Hasta el 2018 cuantas peliculas tiene la saga 'Piratas del Caribe'?")
   print ("a) 5") # Respuesta correcta
   print ("b) 6")
@@ -251,12 +272,15 @@ while game == True:
     print(f"{RED}No soy la respuesta correcta pero tampoco perdiste puntos{RESET}")
 
   print(f"{nombre} llevas {puntaje} puntos")
+  time.sleep(2)
+  clean() #Limpiamos pantalla
+
   # Hacemos una pausa para leer y entender el mensaje de la respuesta  
-  inicio = input("\nPresiona 'Enter' para avanzar al siguiente nivel")
+  # inicio = input("\nPresiona 'Enter' para avanzar al siguiente nivel")
 
   # Categoria Historia
   # Pregunta 7
-  print(f"\n{CYAN}Nivel 7")
+  print(f"\n{GREEN}Nivel 7")
   print("¿Quien gobernaba en el antiguo Egipto?")
   print ("a) El emperador") 
   print ("b) El zar") 
@@ -286,11 +310,14 @@ while game == True:
     print(f"{RED}Soy una respuesta secreta que te obsequia 10 puntos{RESET}")
 
   print(f"{nombre} llevas {puntaje} puntos")
+  time.sleep(2)
+  clean() #Limpiamos pantalla
+
   # Hacemos una pausa para leer y entender el mensaje de la respuesta  
-  inicio = input("\nPresiona 'Enter' para avanzar al siguiente nivel")
+  # inicio = input("\nPresiona 'Enter' para avanzar al siguiente nivel")
 
   # Pregunta 8
-  print(f"\n{CYAN}Nivel 8")
+  print(f"\n{GREEN}Nivel 8")
   print("Quien fue el ultimo inca?")
   print ("a) José de San Martín") 
   print ("b) Manco Cápac")
@@ -320,11 +347,14 @@ while game == True:
     print(f"{RED}Casi nadie me descubre, para celebrar llevate 10 puntos{RESET}")
 
   print(f"{nombre} llevas {puntaje} puntos")
+  time.sleep(2)
+  clean() #Limpiamos pantalla
+
   # Hacemos una pausa para leer y entender el mensaje de la respuesta  
-  inicio = input("\nPresiona 'Enter' para avanzar al siguiente nivel")
+  # inicio = input("\nPresiona 'Enter' para avanzar al siguiente nivel")
 
   # Pregunta 9
-  print(f"\n{CYAN}Nivel 9")
+  print(f"\n{GREEN}Nivel 9")
   print("La guerra de los 100 años duró:")
   print ("a) 100 años") 
   print ("b) 116 años") # Respuesta correcta
@@ -354,11 +384,14 @@ while game == True:
     print(f"{RED}Por poco adivinas, no te preocupes igual ganas 10 puntos extras{RESET}")
 
   print(f"{nombre} llevas {puntaje} puntos")
+  time.sleep(2)
+  clean() #Limpiamos pantalla
+
   # Hacemos una pausa para leer y entender el mensaje de la respuesta  
-  inicio = input("\nPresiona 'Enter' para avanzar al siguiente nivel\n")
+  # inicio = input("\nPresiona 'Enter' para avanzar al siguiente nivel\n")
 
   # Damos las instrucciones sobre la pregunta final
-  print(f"""{YELLOW}{nombre} has llegado al nivel final, este es mi nivel favorito porque te doy la opción de 
+  print(f"""{YELLOW}  {nombre} has llegado al nivel final, este es mi nivel favorito porque te doy la opción de 
   triplicar tu puntaje si respondes correctamente o de lo contrario puedes perder la mitad de tu puntaje.
   Estas listo?{RESET}""")
 
@@ -367,7 +400,7 @@ while game == True:
 
   # Categoria Matemáticas
   # Pregunta 10
-  print(f"\n{CYAN}Nivel 10")
+  print(f"\n{GREEN}Nivel 10")
   print("¿A cuántas unidades equivale 10 decenas de millar?")
   print ("a) 100000 unidades") # Respuesta correcta
   print ("b) 10000 unidades") 
@@ -396,23 +429,26 @@ while game == True:
     print(f"{RED}Sorpresa! mantienes tu puntaje {nombre}{RESET}")
 
   print(f"{nombre} llevas {puntaje} puntos")
+  time.sleep(2)
+  clean() #Limpiamos pantalla
+
   # Hacemos una pausa para leer y entender el mensaje de la respuesta  
-  inicio = input("\nPresiona 'Enter' para continuar")
+  # inicio = input("\nPresiona 'Enter' para continuar")
   
   # Oportunidad de duplicar puntaje aleatoriamente
-  print("""\nDuplicas o Divides 
-  Tienes una última oportunidad de duplicar tu puntaje
+  print(F"""\n{YELLOW}  Duplicas o Divides?\n 
+  Tienes un ultima oportunidad de duplicar tu puntaje
   1.- Escogerás un número entre 1 y 6 y lanzaremos el dado
   2.- Si te toca el número que elegiste duplicas tus puntos
-  3.- Si me toca el número que elija me llevo la mitad de tus puntos""")
+  3.- Si me toca el número que elija me llevo la mitad de tus puntos{RESET}""")
 
   # Condicionamos a solo ingresar número entre 1 y 6
-  num_player = int(input("Ingresa tu número: "))
+  num_player = int(input(f"\n{GREEN}Ingresa tu número: "))
   while num_player not in range(1, 7):
     num_player = int(input("Ingresa un número entre 1 y 6: "))
   # Lanzamiento de dados para duplicar o dividir puntaje
   print(input("\nLanza el dado con 'Enter'"))
-  dado_player= random.randint(1, 7)
+  dado_player= random.randint(1, 6)
   time.sleep(1)
   print(f"Tu dado es: {dado_player}")
   if num_player == dado_player:
@@ -421,10 +457,10 @@ while game == True:
     print("\nBien jugado! Duplicaste tu puntaje")
   else:
     time.sleep(1.5)
-    num_pc = random.randint(1, 7)
+    num_pc = random.randint(1, 6)
     print(f"\nEs mi turno: {num_pc}\n")
     time.sleep(1)
-    dado_pc = random.randint(1, 7)
+    dado_pc = random.randint(1, 6)
     print(f"Mi dado es: {dado_pc}")
     if num_pc == dado_pc:
       puntaje /= 2
@@ -432,18 +468,22 @@ while game == True:
       print("\nTe gané, me llevo la mitad de tu puntaje")
     else:
       time.sleep(1)
-      print("\nMantienes tu puntaje")
+      print(f"\nMantienes tu puntaje{RESET}")
+  time.sleep(2)
+  clean() #Limpiamos pantalla
 
   # Mostramos en pantalla el mensaje de despedida 
   print(f"\n{MAGENTA}Felicitaciones! has finalizado la trivia {nombre}, tienes un puntaje de {puntaje} puntos{RESET}") 
   
   # Preguntamos si desea volver a jugar la trivia
-  print("\nQuieres seguir jugando?")
-  answer = input("Presiona Y para iniciar o N para finalizar: ").upper()
-  if answer == "Y":
+  print(f"\n{RED}Quieres seguir jugando?")
+  answer = input("Ingresa Y para iniciar o N para finalizar: ").upper()
+  if answer == f"Y{RESET}":
       game = True
+      time.sleep(2)
+      clean() #Limpiamos pantalla
   else:
       game = False
 if game == False:
-  print(f"Intentos realizados: {contador}")
-  print(f"{nombre}, gracias por jugar esta trivia, espero te hayas divertido\n")
+  print(f"\n{MAGENTA}Intentos realizados: {contador}")
+  print(f"Gracias por jugar esta trivia, espero te hayas divertido {nombre}{RESET}\n")
