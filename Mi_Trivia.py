@@ -391,8 +391,7 @@ while game == True:
   # inicio = input("\nPresiona 'Enter' para avanzar al siguiente nivel\n")
 
   # Damos las instrucciones sobre la pregunta final
-  print(f"""{YELLOW}{nombre} has llegado al nivel final, este es mi nivel favorito porque te doy la opción de triplicar tu puntaje si respondes correctamente o de lo contrario puedes perder la mitad de tu puntaje.
-  Estas listo?{RESET}""")
+  print(f"""{YELLOW}{nombre} has llegado al nivel final, este es mi nivel favorito porque te doy la opción de triplicar tu puntaje si respondes correctamente o de lo contrario puedes perder la mitad de tu puntaje.\nEstas listo?{RESET}""")
 
   # Hacemos una pausa para leer y entender las instrucciones
   inicio = input("\nPresiona 'Enter' para continuar")
