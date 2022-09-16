@@ -90,9 +90,6 @@ while game == True:
   time.sleep(2)
   clean() #Limpiamos pantalla
 
-  # Hacemos una pausa para leer y entender el mensaje de la respuesta  
-  # inicio = input("\nPresiona 'Enter' para avanzar al siguiente nivel")
-
   #  Pregunta 2
   print(f"\n{GREEN}Nivel 2\n")
   print("¿Quién es el atleta mas rápido a nivel mundial en 100 metros?\n")
@@ -126,8 +123,6 @@ while game == True:
   print(f"{nombre} llevas {puntaje} puntos")
   time.sleep(2)
   clean() #Limpiamos pantalla
-  # Hacemos una pausa para leer y entender el mensaje de la respuesta  
-  # inicio = input("\nPresiona 'Enter' para avanzar al siguiente nivel")
 
   #  Pregunta 3
   print(f"\n{GREEN}Nivel 3\n")
@@ -162,9 +157,6 @@ while game == True:
   print(f"{nombre} llevas {puntaje} puntos")
   time.sleep(2)
   clean() #Limpiamos pantalla
-
-  # Hacemos una pausa para leer y entender el mensaje de la respuesta  
-  # inicio = input("\nPresiona 'Enter' para avanzar al siguiente nivel")
 
   # Categoria Cine
   # Pregunta 4
@@ -201,9 +193,6 @@ while game == True:
   time.sleep(2)
   clean() #Limpiamos pantalla
 
-  # Hacemos una pausa para leer y entender el mensaje de la respuesta  
-  # inicio = input("\nPresiona 'Enter' para avanzar al siguiente nivel")
-
   # Pregunta 5
   print(f"\n{GREEN}Nivel 5\n")
   print("¿En que año se estrenó Corazon Valiente?\n")
@@ -238,9 +227,6 @@ while game == True:
   time.sleep(2)
   clean() #Limpiamos pantalla
 
-  # Hacemos una pausa para leer y entender el mensaje de la respuesta  
-  # inicio = input("\nPresiona 'Enter' para avanzar al siguiente nivel")
-
   # Pregunta 6
   print(f"\n{GREEN}Nivel 6\n")
   print("¿Hasta el 2018 cuantas peliculas tiene la saga 'Piratas del Caribe'?\n")
@@ -274,9 +260,6 @@ while game == True:
   print(f"{nombre} llevas {puntaje} puntos")
   time.sleep(2)
   clean() #Limpiamos pantalla
-
-  # Hacemos una pausa para leer y entender el mensaje de la respuesta  
-  # inicio = input("\nPresiona 'Enter' para avanzar al siguiente nivel")
 
   # Categoria Historia
   # Pregunta 7
@@ -313,9 +296,6 @@ while game == True:
   time.sleep(2)
   clean() #Limpiamos pantalla
 
-  # Hacemos una pausa para leer y entender el mensaje de la respuesta  
-  # inicio = input("\nPresiona 'Enter' para avanzar al siguiente nivel")
-
   # Pregunta 8
   print(f"\n{GREEN}Nivel 8\n")
   print("Quien fue el ultimo inca?\n")
@@ -350,9 +330,6 @@ while game == True:
   time.sleep(2)
   clean() #Limpiamos pantalla
 
-  # Hacemos una pausa para leer y entender el mensaje de la respuesta  
-  # inicio = input("\nPresiona 'Enter' para avanzar al siguiente nivel")
-
   # Pregunta 9
   print(f"\n{GREEN}Nivel 9\n")
   print("La guerra de los 100 años duró:\n")
@@ -386,9 +363,6 @@ while game == True:
   print(f"{nombre} llevas {puntaje} puntos")
   time.sleep(2)
   clean() #Limpiamos pantalla
-
-  # Hacemos una pausa para leer y entender el mensaje de la respuesta  
-  # inicio = input("\nPresiona 'Enter' para avanzar al siguiente nivel\n")
 
   # Damos las instrucciones sobre la pregunta final
   print(f"""{YELLOW}{nombre} has llegado al nivel final, este es mi nivel favorito porque te doy la opción de triplicar tu puntaje si respondes correctamente o de lo contrario puedes perder la mitad de tu puntaje.\nEstas listo?{RESET}""")
@@ -430,9 +404,6 @@ while game == True:
   time.sleep(2)
   clean() #Limpiamos pantalla
 
-  # Hacemos una pausa para leer y entender el mensaje de la respuesta  
-  # inicio = input("\nPresiona 'Enter' para continuar")
-  
   # Oportunidad de duplicar puntaje aleatoriamente
   print(F"""\n{YELLOW}  Duplicas o Divides?\n 
   Tienes un ultima oportunidad de duplicar tu puntaje
