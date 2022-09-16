@@ -23,8 +23,8 @@ RESET = '\033[39m'
 puntaje = random.randint(0, 10)
 
 # Lo primero es mostrar en pantalla el texto de bienvenida para quien juegue tu trivia
-print (f"{YELLOW}BIENVENIDO A MI TRIVIA".center(115))
-print("----------------------".center(110))
+print (f"{YELLOW}BIENVENIDO A MI TRIVIA".center(105))
+print("----------------------".center(100))
 print ("\nPondremos a prueba tus conocimientos\n")
 
 # Agregaremos personalización para nuestros jugadores, preguntando y almacenando sus nombres en una variable
