@@ -23,8 +23,9 @@ RESET = '\033[39m'
 puntaje = random.randint(0, 10)
 
 # Lo primero es mostrar en pantalla el texto de bienvenida para quien juegue tu trivia
-print (f"\n{YELLOW}Bienvenido a mi trivia sobre cultura general")
-print ("Pondremos a prueba tus conocimientos\n")
+print (f"{YELLOW}BIENVENIDO A MI TRIVIA".center(55))
+print("----------------------".center(50))
+print ("\nPondremos a prueba tus conocimientos\n")
 
 # Agregaremos personalización para nuestros jugadores, preguntando y almacenando sus nombres en una variable
 nombre = input("Ingresa tu nombre: ").capitalize()
@@ -57,8 +58,8 @@ while game == True:
 
   # Categoria Deporte
   # Pregunta 1
-  print(f"\n{GREEN}Nivel 1")
-  print("¿Que país ha ganado mas copas del mundo en fútbol?")
+  print(f"\n{GREEN}Nivel 1\n")
+  print("¿Que país ha ganado mas copas del mundo en fútbol?\n")
   print ("a) Brasil") # Respuesta correcta
   print ("b) Alemania") 
   print ("c) Inglaterra") 
@@ -94,8 +95,8 @@ while game == True:
   # inicio = input("\nPresiona 'Enter' para avanzar al siguiente nivel")
 
   #  Pregunta 2
-  print(f"\n{GREEN}Nivel 2")
-  print("¿Quién es el atleta mas rápido a nivel mundial en 100 metros?")
+  print(f"\n{GREEN}Nivel 2\n")
+  print("¿Quién es el atleta mas rápido a nivel mundial en 100 metros?\n")
   print ("a) Michael Jordan")
   print ("b) Tyson Gay")
   print ("c) Gareth Bale")
@@ -130,8 +131,8 @@ while game == True:
   # inicio = input("\nPresiona 'Enter' para avanzar al siguiente nivel")
 
   #  Pregunta 3
-  print(f"\n{GREEN}Nivel 3")
-  print("¿Que es un decatlón?")
+  print(f"\n{GREEN}Nivel 3\n")
+  print("¿Que es un decatlón?\n")
   print ("a) Un deporte olímpico")
   print ("b) Una competencia atlética de 10 pruebas combinadas") # Respuesta correcta
   print ("c) Una maraton de 40 km")
@@ -168,8 +169,8 @@ while game == True:
 
   # Categoria Cine
   # Pregunta 4
-  print(f"\n{GREEN}Nivel 4")
-  print("¿Quien es el protagonista de la película 'Thor'?")
+  print(f"\n{GREEN}Nivel 4\n")
+  print("¿Quien es el protagonista de la película 'Thor'?\n")
   print ("a) Robert Downey Jr.")
   print ("b) Chris Evans")
   print ("c) Chris Hemsworth") # Respuesta correcta
@@ -205,8 +206,8 @@ while game == True:
   # inicio = input("\nPresiona 'Enter' para avanzar al siguiente nivel")
 
   # Pregunta 5
-  print(f"\n{GREEN}Nivel 5")
-  print("¿En que año se estrenó Corazon Valiente?")
+  print(f"\n{GREEN}Nivel 5\n")
+  print("¿En que año se estrenó Corazon Valiente?\n")
   print ("a) 1998")
   print ("b) 2000")
   print ("c) 2005")
@@ -242,8 +243,8 @@ while game == True:
   # inicio = input("\nPresiona 'Enter' para avanzar al siguiente nivel")
 
   # Pregunta 6
-  print(f"\n{GREEN}Nivel 6")
-  print("¿Hasta el 2018 cuantas peliculas tiene la saga 'Piratas del Caribe'?")
+  print(f"\n{GREEN}Nivel 6\n")
+  print("¿Hasta el 2018 cuantas peliculas tiene la saga 'Piratas del Caribe'?\n")
   print ("a) 5") # Respuesta correcta
   print ("b) 6")
   print ("c) 4")
@@ -280,8 +281,8 @@ while game == True:
 
   # Categoria Historia
   # Pregunta 7
-  print(f"\n{GREEN}Nivel 7")
-  print("¿Quien gobernaba en el antiguo Egipto?")
+  print(f"\n{GREEN}Nivel 7\n")
+  print("¿Quien gobernaba en el antiguo Egipto?\n")
   print ("a) El emperador") 
   print ("b) El zar") 
   print ("c) El faraon") # Respuesta correcta
@@ -317,8 +318,8 @@ while game == True:
   # inicio = input("\nPresiona 'Enter' para avanzar al siguiente nivel")
 
   # Pregunta 8
-  print(f"\n{GREEN}Nivel 8")
-  print("Quien fue el ultimo inca?")
+  print(f"\n{GREEN}Nivel 8\n")
+  print("Quien fue el ultimo inca?\n")
   print ("a) José de San Martín") 
   print ("b) Manco Cápac")
   print ("c) Atahualpa") # Respuesta correcta
@@ -354,8 +355,8 @@ while game == True:
   # inicio = input("\nPresiona 'Enter' para avanzar al siguiente nivel")
 
   # Pregunta 9
-  print(f"\n{GREEN}Nivel 9")
-  print("La guerra de los 100 años duró:")
+  print(f"\n{GREEN}Nivel 9\n")
+  print("La guerra de los 100 años duró:\n")
   print ("a) 100 años") 
   print ("b) 116 años") # Respuesta correcta
   print ("c) 10 años")
@@ -391,8 +392,7 @@ while game == True:
   # inicio = input("\nPresiona 'Enter' para avanzar al siguiente nivel\n")
 
   # Damos las instrucciones sobre la pregunta final
-  print(f"""{YELLOW}  {nombre} has llegado al nivel final, este es mi nivel favorito porque te doy la opción de 
-  triplicar tu puntaje si respondes correctamente o de lo contrario puedes perder la mitad de tu puntaje.
+  print(f"""{YELLOW}{nombre} has llegado al nivel final, este es mi nivel favorito porque te doy la opción de triplicar tu puntaje si respondes correctamente o de lo contrario puedes perder la mitad de tu puntaje.
   Estas listo?{RESET}""")
 
   # Hacemos una pausa para leer y entender las instrucciones
@@ -400,8 +400,8 @@ while game == True:
 
   # Categoria Matemáticas
   # Pregunta 10
-  print(f"\n{GREEN}Nivel 10")
-  print("¿A cuántas unidades equivale 10 decenas de millar?")
+  print(f"\n{GREEN}Nivel 10\n")
+  print("¿A cuántas unidades equivale 10 decenas de millar?\n")
   print ("a) 100000 unidades") # Respuesta correcta
   print ("b) 10000 unidades") 
   print ("c) 100 centenas")
@@ -413,7 +413,7 @@ while game == True:
     respuesta_10 = input("Debes responder a, b, c o d. Ingresa nuevamente tu respuesta: ")
   # Ahora, verificamos su respuesta para mandar un mensaje de acierto o de error
   if respuesta_10 == "a":
-    puntaje *= 3
+    puntaje += (abs(puntaje) * 2)
     print(f"{GREEN}Excelente {nombre}, has triplicado tu puntaje{RESET}")
   elif respuesta_10 == "b":
     puntaje += 5
