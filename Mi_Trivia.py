@@ -446,13 +446,13 @@ while game == True:
   
   # Preguntamos si desea volver a jugar la trivia
   print(f"\n{RED}Quieres seguir jugando?")
-  answer = input("Ingresa Y para iniciar o N para finalizar: ").upper()
-  if answer == f"Y{RESET}":
-      game = True
-      time.sleep(2)
-      clean() #Limpiamos pantalla
+  answer = input(f"Ingresa Y para iniciar o N para finalizar: {RESET}").upper()
+  if answer == "Y":
+    game = True
+    time.sleep(2)
+    clean() #Limpiamos pantalla
   else:
-      game = False
+    game = False
 if game == False:
   print(f"\n{MAGENTA}Intentos realizados: {contador}")
   print(f"Gracias por jugar esta trivia, espero te hayas divertido {nombre}{RESET}\n")
